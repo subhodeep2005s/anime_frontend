@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Carousel customization */
+.carousel-container {
+  @apply rounded-lg overflow-hidden shadow-lg;
+}
+
+.carousel .control-dots {
+  @apply bottom-4;
+}
+
+.carousel .control-dots .dot {
+  @apply w-2 h-2 bg-white/80 hover:bg-white;
+}
+
+/* Masonry Grid */
+.masonry-grid {
+  @apply columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4;
+}
+
+.masonry-item {
+  @apply break-inside-avoid;
+}
+
+/* Hover effects */
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+/* Additional custom styles */
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-gray-100 text-gray-900;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .masonry-grid {
+    @apply columns-2 gap-3;
+  }
+}
+
