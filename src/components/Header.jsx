@@ -162,8 +162,8 @@ function Header() {
                   ))}
                 </div>
               )}
-              <Link to="/upcoming" className="px-4 py-3 hover:bg-[#23252b] hover:text-[#f47521] transition-colors">
-                News
+              <Link to="/admin" className="px-4 py-3 hover:bg-[#23252b] hover:text-[#f47521] transition-colors">
+                Admin
               </Link>
               <Link to="/upcoming" className="px-4 py-3 hover:bg-[#23252b] hover:text-[#f47521] transition-colors">
                 Upcoming
